@@ -1,5 +1,6 @@
 import { Outlet } from 'react-router-dom';
-import NavTabs from './Components/NavTabs';
+import NavTabs from './Components/NavTabs.jsx';
+import FooterEl from './Components/FooterEl.jsx'
 
 function App() {
   // The Outlet component will swap between the different pages according to the URL
@@ -9,36 +10,13 @@ function App() {
       <main className="mx-3">
         <Outlet />
       </main>
+      <footer>
+        <FooterEl />
+      </footer>
     </>
   );
 }
 
 export default App;
-
-//import { useState } from 'react'
-
-// import './App.css';
-// import Header from './Components/Header'; //here I am importing the header object/component. Note that I don't need the file type in the path
-// //if i want to import one class at a time; the line below offers less control
-// //import Button from 'react-bootstrap/Button'
-// import './pages/AboutPage';
-// import AboutPage from './pages/AboutPage';
-
-// function App() {
-
-//   return (
-//     <>
-//       {/* Here I am adding my 'Header' component; note adding components is like adding regular html elements. I can also use <Header></Header> or self closing syntax <Header .>*/}
-//       <div>
-//         <Header></Header>
-//       </div>
-//       <div>
-//         <AboutPage></AboutPage>
-//       </div>
-//     </>
-//   )
-// }
-
-// export default App;
 
 
