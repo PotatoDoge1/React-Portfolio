@@ -1,8 +1,25 @@
 #root {
-  max-width: 1280px;
+  max-width: 100%;
   margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
+  padding: 0rem;
+  height: 100%; /* Ensure the root takes full height */
+}
+
+html, body {
+  height: 100%; /* Ensure the body takes full height */
+  margin: 0;    /* Remove default margin */
+}
+
+.app-container {
+  display: flex; /* Use flexbox layout */
+  flex-direction: column; /* Stack children vertically */
+  min-height: 100vh; /* Minimum height of 100% of the viewport */
+}
+
+.main-content {
+  flex: 1; /* This will grow to fill available space */
+  display: flex; /* Flexbox for the main content */
+  flex-direction: column; /* Stack children vertically */
 }
 
 .logo {
@@ -49,4 +66,20 @@
 
 .customColor2{
   color: aquamarine;
+}
+
+.navbar {
+  width: 100%; /* Ensure the navbar takes the full width */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Optional shadow effect */
+}
+
+.footer {
+  background-color: #f8f9fa; /* Background color for footer */
+  padding: 20px; /* Padding around footer */
+  text-align: center; /* Center text */
+  width: 100%;
+  position: relative; /* Position it at the bottom */
+  bottom: 0; /* Align it to the bottom */
+  left: 0; /* Ensure it stretches across the entire width */
+  box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1); /* Optional shadow */
 }
