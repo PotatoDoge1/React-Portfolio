@@ -8,7 +8,7 @@ function NavTabs() {
 
     return (
 
-        <Navbar expand="lg" bg="primary" variant="dark" className="fixed-top mb-3">
+        <Navbar expand="lg" bg="primary" variant="dark" className="sticky-top mb-3 navbar">
             {/* Logo */}
             <Navbar.Brand>PotatoDoge1</Navbar.Brand>
 
@@ -20,8 +20,9 @@ function NavTabs() {
 
                 <Nav className="ms-auto">
                     <Link to="/"
-                    className={currentPage === '/' ? 'nav-link active' : 'nav-link'}  // This is a conditional (ternary) operator that checks to see if the current page is "Home". If it is, we set the current page to 'nav-link-active', otherwise we set it to 'nav-link'
+                    className={currentPage === '/' ? 'nav-link active' : 'nav-link'}  // This is a conditional (ternary) operator that checks to see if the current page is "Home". If it is, we set the current page to 'nav-link-active', otherwise we set it to 'nav-link'. It conditionally highlights the link if we are on the page.
                     >About Me</Link>
+                    <Link to="/Portfolio" className={currentPage === '/Portfolio' ? 'nav-link active' : 'nav-link'}> Portfolio </Link> 
                     <Link to="/Contact" className={currentPage === '/AboutPage' ? 'nav-link active' : 'nav-link'}> Contact </Link>
                     <Link to="/Resume" className={currentPage === '/Resume' ? 'nav-link active' : 'nav-link'}> Resume </Link>
 
