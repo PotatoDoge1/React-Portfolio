@@ -8,7 +8,7 @@ function NavTabs() {
 
     return (
 
-        <Navbar expand="lg" bg="primary" variant="dark" className="sticky-top mb-3 navbar">
+        <Navbar expand="sm" bg="primary" variant="dark" className="sticky-top mb-3 navbar">
             {/* Logo */}
             <Navbar.Brand>PotatoDoge1</Navbar.Brand>
 
