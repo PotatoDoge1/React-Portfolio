@@ -8,10 +8,14 @@ export default function Contact() {
             <a
                 href={resume}
                 download="Ryan_Schwark_Resume.pdf"
-                className="btn btn-primary mt-3"
+                className="btn btn-primary my-3"
             >
                 Download my resume here
             </a>
+            <p>A list of some of my developer proficiencies:</p>
+            <ul>
+                <li>I am working on them!</li>
+            </ul>
         </div>
     )
 }
