@@ -1,0 +1,12 @@
+.card {
+    border: none; /* Remove border for a cleaner look */
+    transition: transform 0.3s; /* Add smooth transition for hover effect */
+}
+
+.card:hover {
+    transform: scale(1.03); /* Slightly enlarge the card on hover */
+}
+
+.card-img-top {
+    border-radius: 0.25rem; /* Rounded corners for the image */
+}

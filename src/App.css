@@ -5,6 +5,10 @@
   height: 100%; /* Ensure the root takes full height */
 }
 
+p{
+  margin-bottom: 0%;
+}
+
 html, body {
   height: 100%; /* Ensure the body takes full height */
   margin: 0;    /* Remove default margin */
